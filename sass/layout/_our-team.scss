@@ -1,0 +1,53 @@
+.our-team {
+  background-color: var(--secondary-background-color);
+}
+.team__list {
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+.team-item {
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 4 - 30px);
+    & + & {
+      margin-left: 30px;
+    }
+    // &:first-child {
+    //   margin-left: 0;
+    // }
+  }
+}
+
+.div-team {
+  background-color: var(--title-text-color);
+}
+.names {
+  @include font(16px, 1.19, 0.03em, 500);
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.responsibilities {
+  @include font(16px, 1.19, 0.03em);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.team-icons-item + .team-icons-item {
+  margin-left: 10px;
+}
+
+/* .team-social-icon:hover,
+.team-social-icon:focus {
+fill: var(--title-text-color);
+} */
