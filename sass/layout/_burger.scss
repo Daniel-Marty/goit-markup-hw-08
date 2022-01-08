@@ -43,6 +43,9 @@
     @include font(40px, 1.17, 0.02em, 500);
   }
 }
+.burger__link.current {
+  color: var(--accent-text-color);
+}
 .burger__contacts {
   margin-bottom: 64px;
 }
