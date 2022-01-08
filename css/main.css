@@ -1302,6 +1302,7 @@ fill: var(--title-text-color);
   border-radius: 4px;
   background-color: white;
   transition: transform 250ms;
+  overflow-y: scroll;
 }
 @media screen and (min-width: 320px) {
   .modal {
@@ -1469,6 +1470,7 @@ letter-spacing: 0.03em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: scroll;
 }
 @media screen and (min-width: 767px) {
   .mob-menu {
