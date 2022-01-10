@@ -18,6 +18,12 @@
   @media screen and (min-width: 480px) {
     padding-left: 40px;
   }
+
+  transition: opacity var(--transition-time) var(--cubic-bezier),
+    visibility var(--transition-time) var(--cubic-bezier);
+  &.is-hidden .modal {
+    transform: scale(1.5);
+  }
 }
 
 .burger__list {
@@ -88,4 +94,7 @@
 }
 .menu-bottom {
   margin-bottom: 48px;
+}
+.mob-menu.container.is-hidden {
+  opacity: 0;
 }

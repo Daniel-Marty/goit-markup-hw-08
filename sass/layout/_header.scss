@@ -6,18 +6,15 @@
     width: 738px;
   }
   display: flex;
-  justify-content: center;
   @include font(14px, 1.14, 0.02em, 500);
 }
 
 .header-border {
-  @media screen and (min-width: 767px) {
-    display: flex;
-    justify-content: center;
-    width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  // @media screen and (min-width: 767px) {
+  //   display: flex;
+  //   width: 768px;
+  //   margin: 0 auto;
+  // }
   border-bottom: 1px solid #ececec;
 }
 
@@ -60,6 +57,13 @@
   }
 }
 .nav-right {
-  margin-left: 84px;
   min-width: fit-content;
+}
+.nav-left {
+  @media screen and (min-width: 768px) {
+    margin-right: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
 }

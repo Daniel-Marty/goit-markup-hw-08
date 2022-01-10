@@ -74,17 +74,19 @@
             <div class="container__header">
                 <nav class="nav">
                     <a href="" class="logo--header logo">Web<span class="logo__studio">Studio</span></a>
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="./index.html" class="nav__link current">Студия</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="./portfolio.html" class="nav__link">Портфолио</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="nav__link">Контакты</a>
-                        </li>
-                    </ul>
+                    <div class="nav-left">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="./index.html" class="nav__link current">Студия</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="./portfolio.html" class="nav__link">Портфолио</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="" class="nav__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="nav-right">
                         <ul class="contacts">
                             <li class="contacts__list">
@@ -105,7 +107,7 @@
     <main>
         <!--ГЕРОЙ-->
         <section class="hero__section">
-            <div class="container">
+            <div class="container__header">
                 <h1 class="hero__title">Эффективные решения
                     для вашего бизнеса</h1>
                 <button type="button" class="button__hero button" data-modal-open>Заказать услугу</button>
@@ -472,7 +474,7 @@
                     <div class="container-footer-left">
                         <a href="" class="logo logo-foot-main">Web<span class="logo__studio--footer ">Studio</span></a>
                         <address>
-                            <ul>
+                            <ul class="contacts--footer-list">
                                 <li class="contacts--footer"><a href="https://goo.gl/maps/7hmKTm9yFbBLXRid7" class="address">г.
                                         Киев, пр-т Леси Украинки,
                                         26</a></li>
@@ -575,7 +577,7 @@
                 </div>
                     <div class="checkbox__wrap">
                         <input type="checkbox" name="terms & conditions" id="checkbox" class="checkbox">
-                        <label for="checkbox" class="checkbox__text"><span>
+                        <label for="checkbox" class="checkbox__text"><span class="checkbox--modified">
                             <svg class="icon-checked" width="16" height="15">
                                 <use href="./images/icons.svg#checked-vectr"></use>
                             </svg>

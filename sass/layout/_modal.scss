@@ -31,7 +31,6 @@
   }
   @media screen and (min-width: 480px) {
     width: 450px;
-    height: 100vh;
   }
   @media screen and (min-width: 1200px) {
     width: 528px;
@@ -76,7 +75,7 @@
   }
 }
 .checkbox__text {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   @include font(12px, 1.16);
@@ -93,6 +92,13 @@
   @media screen and (min-width: 1200px) {
     @include font(14px, 1.71);
   }
+  @media screen and (min-width: 479px) {
+    display: flex;
+  }
+}
+.checkbox--modified {
+  display: inline-block;
+  margin-right: 8px;
 }
 
 .checkbox__text span {
